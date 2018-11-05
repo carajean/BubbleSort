@@ -6,6 +6,12 @@ function bubbleSort(arr) {
     return sorted;
 }
 
-bubbleSort.swap = () => {
+bubbleSort.shouldSort = (elem1, elem2) => {
+  
+}
 
+bubbleSort.swap = (leftIdx, rightIdx, array) => {
+  const temp = array[rightIdx];
+  array[rightIdx] = array[leftIdx];
+  array[leftIdx] = temp;
 }
